@@ -1,0 +1,167 @@
+
+.navbar {
+	background-color: #989dd9;
+}
+
+.navbar-brand {
+	color: white;
+	font-family: "Pacifico", cursive;
+}
+
+.nav-link {
+	color: white;
+	font-family: "Poppins", sans-serif;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  width: 1518px;
+  height: auto;
+  opacity: 0.3;
+}
+
+.overlay-text {
+  position: absolute;
+  align-items: center;
+   top: 35%; 
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  color:black; 
+  padding: 10px 20px; 
+  font-size: 20px; 
+  text-align: center;
+}
+
+#bgim {
+	width: 100%;
+	height: 100%;
+}
+
+#middle h1, h2 {
+	color: black;
+  
+}
+
+#middle h2{
+	font-family: "Poppins", sans-serif;
+}
+#changetext {
+	color: #c91625;
+}
+#changetext:after {
+	content: "";
+	animation-name: ctextan;
+	animation-duration: 0.8s;
+	animation-iteration-count: infinite;
+
+}
+@keyframes ctextan{
+	25%{
+		content: "USA";
+	}
+	50%{
+		content: "INDIA";
+	}
+	75%{
+		content: "FRANCE";
+	}
+	100%{
+		content: "GERMANY";
+	}
+
+}
+
+#rating .card{
+	height: 405px;
+	border-color: black;
+}
+#rating .card img{
+	height: 250px;
+	width: 300px;
+}
+
+#rating #star {
+	color: gold;
+}
+
+#serv .card{
+	height: 170px;
+	border-color: red;
+	border-width: 5px;
+}
+
+#serv .card img{
+	height: 80px;
+	width: 80px;
+}
+
+#book img {
+	height: 100%;
+	width: 100%;
+}
+
+#book input #in2 {
+	float: right;
+
+}
+
+#about img {
+	height: 100%;
+	width: 100%;
+}
+
+
+.footer {
+
+	height: 200px;
+	background-color: #989dd9;
+	font-family: "Poppins", sans-serif;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.footer ul{
+	list-style-type: none;
+}
+
+#head {
+	color: red;
+/*	font-size: 50px;*/
+    font-family: "Dancing Script", cursive;
+}
+#headn {
+	font-family: "Dancing Script", cursive; 
+
+}
+
+#about h3{
+	text-align: center;
+	color: #4fde28;
+
+}
+#gal h3 {
+	text-align: center;
+
+}
+#gal {
+	align-items: center;
+	align-content: center;
+}
+#gal img{
+	width: 360px;
+	height: 200px;
+/*	transform: scale(1.2);*/
+}
+
+#gal img:hover{
+	transform: scale(1.1);
+}
+
+#colt {
+	color: #c91625;

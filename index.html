@@ -1,0 +1,600 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="CSS\style.css">
+
+</head>
+
+  <body>
+
+<nav class="navbar navbar-expand-lg ">
+  <a class="navbar-brand" href="#">TRAVELER</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#book">Book</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Packages
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#rating">United States</a>
+          <a class="dropdown-item" href="#rating">India</a>
+          <a class="dropdown-item" href="#rating">France</a>
+          <a class="dropdown-item" href="#rating">Germany</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#serv">Services</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#gal">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+    </ul>
+    <button class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#registermodal">Register</button> &nbsp;
+    <button class="btn btn-success my-2 my-sm-0" data-toggle="modal" data-target="#loginmodal">Login</button>
+  </div>
+</nav>
+
+<!-- middle part -->
+  
+
+<div class="image-container" id="home"> 
+  <img src="img\neww.jpg">
+  <div class="overlay-text">
+<center>
+  <h1 class="display-4"> <b> WELCOME TO TRAVELER</b> </h1><br>
+  <br>
+    <br>
+  <h2 class="display-2"><b>Visit <span id="changetext"> </span></b></h2>
+  <br>
+  <center>Flights, International Flights,  Hotels, International Hotels, Homestays and Villas, Activities, Holidays In India, International Holidays, Book Flights From US, Book Flights From UAE, Trip Planner, Gift Cards, Trip Money, Trip Ideas, Travel Blog, PNR Status, Traveler Advertising Solutions, One Way Cab </center> 
+    <br>
+    <button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+</center>
+</div> 
+</div>
+<!-- eo middle part -->
+
+<!-- book form -->
+
+<div class="container my-5" id="book">
+  <h1 class="text-center"> BOOK <span id="colt">HERE<span/></h1>
+<hr width="250px" class="bg-dark"></hr>
+  <div class="row mt-5">
+   
+    <div class="col-md-6">
+      <img src="img\book.jpg">
+    </div>
+    <div class="col-md-6">
+        <form>
+  <div class="form-group">
+    <select class="form-control" id="where" placeholder="Where To" >
+      <option>USA</option>
+      <option>INDIA</option>
+      <option>FRANCE</option>
+      <option>GERMANY</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="num" placeholder="How Many">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="from_date" name="from_date" placeholder="mm/dd/yy">
+  </div>
+  <div class="form-group">
+    <input type="text" class="form-control" id="to_date" name="to_date" placeholder="mm/dd/yy">
+  </div>
+  <div class="form-group">
+    <textarea class="form-control" id="detail" rows="3" placeholder="Enter your Name & Details"></textarea>
+  </div>
+  <div class="form-group">
+  <button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+    </div>
+</form>
+     
+
+
+    </div>
+    </form>
+  </div>
+</div>
+
+
+<!-- eo book form -->
+
+<!-- packages -->
+<div class="container my-5" id="rating">
+  <h1 class="text-center"> OUR <span id="colt">PACKAGES<span/></h1>
+<hr width="250px" class="bg-dark"></hr>
+  <div class="row mt-5">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\usa.jpg">
+          
+          <p>UNITED STATES <br> Visit this place with our services.
+            <br> <b> 280$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\ind.jpg">
+          
+          <p>INDIA<br>Visit this place with our services.<br> 
+            <b> 100$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\new3.jpg">
+          
+          <p>GERMANY <br> Visit this place with our services.
+            <br><b> 180$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- eo 1st row -->
+
+  <div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\Malasiya.jpg">
+          
+          <p>MALAYSIA<br> Visit this place with our services.
+            <br> <b> 150$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\Spain.jpg">
+          
+          <p>SPAIN<br>Visit this place with our services.
+            <br> 
+            <b> 190$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\France.jpg">
+          
+          <p>FRANCE<br> Visit this place with our services.
+            <br>
+           <b> 200$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- eo 2nd row -->
+
+<div class="row mt-3">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\Hungary.jpg">
+          
+          <p>HUNGARY<br> Visit this place with our services.
+            <br> <b> 120$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            <i class="bi bi-star"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\Rome.jpg">
+          
+          <p>ROME<br>Visit this place with our services. <br> 
+            <b> 170$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\switzerland.jpg">
+          
+          <p>SWITZERLAND<br> Visit this place with our services.<br>
+           <b> 300$ </b> &nbsp; &nbsp;&nbsp;<button class="btn btn-success my-2 my-sm-0" type="submit">Book Now</button>
+          </p>
+          <div id="star">
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-fill"></i>
+            <i class="bi bi-star-half"></i>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- eo packages -->
+
+<!-- services -->
+
+<div class="container my-5" id="serv">
+  <h1 class="text-center"> OUR <span id="colt">SERVICES<span/></h1>
+<hr width="250px" class="bg-dark"></hr>
+  <div class="row mt-5">
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\hotel.png">
+          
+          <p>Affordable Hotels
+            
+          </p>
+          
+        </div>
+      </div>
+    </div>
+      
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\food.png">
+          
+          <p>Food &amp; Drinks
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\wifi.jpg">
+          
+          <p>Free WiFi
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\place.jpg">
+          
+          <p>Places to Visit
+          </p>
+          
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\car.jpg">
+          
+          <p>Car Service
+          </p>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-2">
+      <div class="card">
+        <div class="card-body">
+          <img src="img\saf.jpg">
+          
+          <p>Saftey Guide
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- eo services -->
+
+<!-- gallery  -->
+<div class="container my-5" id="gal">
+  <h1 class="text-center"> GALLERY</h1>
+<hr width="250px" class="bg-dark"></hr>
+  <div class="row mt-5">
+    <div class="col-md-12"><img src="img\gal3.jpg"> &nbsp;
+    <img src="img\gal4.jpg"> &nbsp;
+    <img src="img\gal1.jpg"></div>
+    
+  </div>
+  <div class="row mt-3">
+    <div class="col-md-12"><img src="img\gal6.jpg"> &nbsp;
+    <img src="img\gal5.jpeg"> &nbsp;
+    <img src="img\gal2.jpeg"></div>
+    
+  </div>
+</div>
+
+
+<!-- eo of gallery -->
+
+
+<!-- aboutus -->
+
+<div class="container my-5" id="about">
+<h1 class="text-center"> About <span id="colt">US<span/></h1>
+<hr width="250px" class="bg-dark"></hr>
+  <div class="row mt-3">
+   
+    <div class="col-md-6">
+      <img src="img\new4.jpg">
+    </div>
+    <div class="col-md-6">
+     <h3>TRAVELER</h3>
+     <p>Established in 2024, TRAVELER has since positioned itself as one of the leading companies, providing great offers, competitive airfares, exclusive discounts, and a seamless online booking experience to many of its customers. The experience of booking your flight tickets, hotel stay, and holiday package through our desktop site or mobile app can be done with complete ease and no hassles at all. 
+</p>
+<p>We also deliver amazing offers, such as Instant Discounts, Fare Calendar, MyRewardsProgram, MyWallet, and many more while updating them from time to time to better suit our customers’ evolving needs and demands.</p>
+
+</div>
+  </div>
+</div>
+
+<!-- eo of aboutus -->
+
+
+<!-- eo About -->
+
+<!-- footer  -->
+<div class="footer my-3">
+  <div class="container-fluid">
+  <div class="row mx-3">
+  <div class="col-md-12">
+   
+    <h1><span id="head">T</span><span id="headn">RAVELER</span></h1>
+    <i class="bi bi-telephone"></i> &nbsp;1800 123 5555 <br>
+    <i class="bi bi-envelope"></i>&nbsp; customercare@traveler.com <br>
+    <i class="bi bi-facebook"></i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <i class="bi bi-instagram"></i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="bi bi-twitter-x"></i> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  <i class="bi bi-whatsapp"></i>  <br><br>
+  <i class="bi bi-c-circle"></i> <b> 2024 TRAVELER LIMITED All Rights Reserved </b>
+  </div>
+</div>
+</div>
+</div>
+
+<!-- eo of footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal" id="loginmodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Login Form</h5></div>
+        <div class="modal-body">
+          <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <!-- <small id="passwordHelpInline" class="text-muted"> Must be 8-20 characters long. </small> -->
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-primary">Login</button>
+</div>
+  <p>Don't have an Account?<a href="#registermodal" data-toggle="modal" data-dismiss="modal" > Sign Up </a></p>
+
+</form>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal" id="registermodal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header"><h5>Registration Form</h5></div>
+        <div class="modal-body">
+          <form>
+        <div class="form-group">
+        <label for="exampleInputFullName">Full Name</label>
+          <input type="text" class="form-control" id="exampleInputFullName" placeholder="FullName">
+        </div>
+        <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    <p id="emailtext"> </p>
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+        <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    <p id="emailtext"></p>
+    <!-- <small id="passwordHelpInline" class="text-muted"> Must be 8-20 characters long. </small> -->
+  </div>
+        <div class="form-group">
+        <label for="exampleInputContact">Contact Number</label>
+          <input type="Contact" class="form-control" id="exampleInputContact" placeholder="Contact No">
+        </div>
+  <div class="form-group">
+  <button type="submit" class="btn btn-primary"> Register </button>
+</div>
+<p>Already have an Account?<a href="#loginmodal" id="regbtn" data-toggle="modal" data-dismiss="modal" > Sign In </a></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+
+<script type="text/javascript">
+
+  $(document).ready(function(){
+$("#email").keyup(function(){
+if(mailcheck())
+{
+$("#emailtext").html("<font color='green'> validated </font> ")
+$("#email").css("border", "5px solid green");
+}
+else
+{
+$("#emailtext").html("<font color='red'> Not validated </font>")
+$("#email").css("border", "5px solid red");
+}
+})
+})
+
+function mailcheck()
+{
+let maildata =$("#email").val();
+let mailpattern = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,5})$/;
+
+if(mailpattern.test(maildata))
+{
+  return true;
+}else{
+  return false;
+}
+
+}
+
+
+  
+
+</script>
+
+
+
+
+</body>
+</html>
